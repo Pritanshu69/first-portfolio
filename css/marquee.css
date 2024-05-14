@@ -1,0 +1,25 @@
+/* Define font-family */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jersey+20&display=swap');
+
+/* Marquee styles */
+.marquee {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: #BD5D38; /* Background color */
+}
+
+.marquee-content {
+    display: inline-block;
+    animation: marquee 30s linear infinite;
+    color: #ffffff; /* Text color */
+    font-family: "Jersey 20", sans-serif; /* Use Google Fonts Roboto */
+    font-size: 1.5rem; /* Increased text size */
+}
+
+@keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
