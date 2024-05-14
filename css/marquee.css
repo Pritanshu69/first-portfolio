@@ -5,6 +5,7 @@
 /* Marquee styles */
 .marquee {
     width: 100%;
+    max-width: 100vw; /* Ensure marquee fits within the viewport */
     overflow: hidden;
     white-space: nowrap;
     background-color: #BD5D38; /* Background color */
@@ -14,8 +15,15 @@
     display: inline-block;
     animation: marquee 10s linear infinite;
     color: #ffffff; /* Text color */
-    font-family: "Jersey 20", sans-serif; /* Use Google Fonts Roboto */
+    font-family: "Jersey 20", sans-serif; /* Use your custom font */
     font-size: 1.5rem; /* Increased text size */
+}
+
+/* Adjust font size for smaller screens */
+@media screen and (max-width: 768px) {
+    .marquee-content {
+        font-size: 1.25rem; /* Decrease font size for smaller screens */
+    }
 }
 
 @keyframes marquee {
