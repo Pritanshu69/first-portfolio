@@ -13,6 +13,7 @@
     <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
     <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="css/resume.min.css" rel="stylesheet">
     <!-- icon -->
     <link rel="icon" href="img/tabicon.jpeg">
@@ -23,7 +24,7 @@
       <a class="navbar-brand js-scroll-trigger" href="#page-top">
         <span class="d-block d-lg-none">PritAnshu</span>
         <span class="d-none d-lg-block">
-          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/dp1.jpeg" alt="">
+          <img data-aos="zoom-in-down" class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/dp1.jpeg" alt="#">
         </span>
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -57,7 +58,9 @@
 
       <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
         <div class="my-auto">
-          <h1 class="mb-0">Pritanshu
+          <h1 data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine" class="mb-0">Pritanshu
             <span class="text-primary">Samanta</span>
           </h1>
           <div class="subheading mb-5">Balitikuri Naskarpara Howrah, 711113 · +91-7044704683 ·
@@ -252,12 +255,14 @@
 
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/resume.min.js"></script>
     <script type="text/javascript" src="particles.js-master/particles.js"></script>
     <script type="text/javascript" src="particles.js-master/demo/js/app.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
   </body>
 
